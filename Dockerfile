@@ -1,9 +1,5 @@
 FROM golang:alpine3.20 AS builder
 
-ENV GOPATH=/go/bin/
-ENV PATH=/usr/local/go/bin
-ENV GOPATH=/go/bin/
-
 WORKDIR /go/hello/src
 
 COPY ./hello.go .
